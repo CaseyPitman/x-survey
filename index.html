@@ -23,7 +23,7 @@
   <div id="container">
     <header>
       <h1 id="title">X-Men Survey</h1>
-     <p id="description">What do you love about the X-Universe? What do you hate?</p>
+     <p id="description">What do you love about the X-Universe?</p>
    </header>
 
    <form id="survey-form">
@@ -50,7 +50,7 @@
     </div>
 
     <div class="form-item">
-      <label for="number" id="number-label">Age <span class="cue">(optional)</span></label>
+      <label for="number" id="number-label">Age <br><span class="cue">(optional)</span></label>
       <input
         type="number"
         name="age"
@@ -64,7 +64,7 @@
     <div class="form-item">
       <p>Who is your favorite X-Men character?</p>
       <select id="dropdown" name="writer" class="form-control" required>  
-        <option disabled selected value>Choose your favorite X-Men character</option>
+        <option disabled selected value>Select favorite character</option>
         <option value="xavier">Professor Xavier</option>
         <option value="magneto">Magneto</option>
         <option value="wolverine">Wolverine</option>
@@ -149,7 +149,7 @@
     <div class="form-item">
         <p>What is your favorite current X-title?</p>
         <select id="dropdown" name="x-title" class="form-control" required>  
-          <option disabled selected value>Choose your favorite current X-title</option>
+          <option disabled selected value>Select favorite X-title</option>
           <option value="x-men">X-Men</option>
           <option value="marauders">Marauders</option>
           <option value="excalibur">Excalibur</option>
@@ -160,7 +160,7 @@
     </div>
 
     <fieldset class="form-item">
-        <Legend>Which X-titles do you currently read?<span class="cue">(Check all that apply)</span></legend>
+        <Legend>Which X-titles do you currently read?<br><span class="cue">(Check all that apply)</span></legend>
         <label for="x-men">
           <input
             type="checkbox"

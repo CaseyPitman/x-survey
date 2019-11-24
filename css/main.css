@@ -117,24 +117,106 @@ body  {
   justify-content:center;
   align-items:center;
   flex-flow:row wrap;
-  
+  margin:25px 0 75px;
 }
 
 header {
-  width:100%;
+  width:75%;
   text-align:center;
-  margin:100px auto;
+  margin: 20px auto;
+  color:rgba(250, 225, 50);
 }
+
+header h1 {
+  margin:auto;
+  font-size:3rem;
+}
+
+header p {
+  margin:20px auto 0;
+  font-size:2rem;
+  font-weight:lighter;
+  font-style: italic;
+}
+
 #survey-form {
   background:rgba(250, 225, 50, 0.8);
   border: 0px transparent;
   border-radius:15px;
-  padding:50px;
-  width:60%;
-  height:auto;
-  margin:0 auto 100px;
+  padding:25px;
+  width:75%;
+  color:rgb(5,5,70);
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-flow:row wrap;
+  font-size:1.8rem;
 }
 
+#survey-form p {
+  margin:0 0 5px;
+  font-weight:bold;
+}
+
+legend {
+  margin:0 0 10px;
+  font-weight:bold;
+}
+
+
+.form-item {
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-flow:row wrap;
+  width:100%;
+  margin:0 auto 20px;
+
+}
+
+.form-control {
+  width:100%;
+  border:solid grey 1px;
+  border-radius:5px;
+  margin:0;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  font-weight:bold;
+  margin:0 0 5px;
+}
+
+.cue {
+  font-size:1.5rem;
+  font-weight:lighter
+}
+
+
+.form-control{
+  padding:5px;
+  height:auto;
+}
+
+.input-radio,
+.input-checkbox {
+  margin:10px 10px 0 0;
+}
+
+#comments {
+  height:200px;
+}
+
+#submit {
+  background:#13479d;
+  color:whitesmoke;
+  border: 1px solid yellow;
+  border-radius:5px;
+  width:100%;
+  text-align:center;
+  padding:5px 0;
+}
 
 
 
