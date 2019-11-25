@@ -98,10 +98,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+   /** Mobile First Styles **/
+
 html {
   font-family: 'Poppins', sans-serif;
   font-size:10px;
-  
 }
 
 body  {
@@ -110,7 +112,6 @@ body  {
   height:100%;
   background-attachment: fixed;
 }
-
 
 #container {
   display:flex;
@@ -158,10 +159,6 @@ header p {
   font-weight:bold;
 }
 
-legend {
-  margin:0 0 10px;
-  font-weight:bold;
-}
 
 
 .form-item {
@@ -179,6 +176,8 @@ legend {
   border:solid grey 1px;
   border-radius:5px;
   margin:0;
+  padding:5px;
+  height:auto;
 }
 
 #name-label,
@@ -188,15 +187,14 @@ legend {
   margin:0 0 5px;
 }
 
+legend {
+  margin:0 0 10px;
+  font-weight:bold;
+}
+
 .cue {
   font-size:1.5rem;
   font-weight:lighter
-}
-
-
-.form-control{
-  padding:5px;
-  height:auto;
 }
 
 .input-radio,
@@ -310,16 +308,21 @@ legend {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+   /** TABLET STYLES **/
+@media screen and (min-width:768px){
+  html{
+    font-size:16px;
+  }
+
+  /** DESKTOP STYLES **/
+  @media screen and (min-width:1200px){
+    #survey-form {
+      width:60%;
+    }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
